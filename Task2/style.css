@@ -1,0 +1,119 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Overall body styling */
+body {
+  background-color: #fff7f5;
+  color: #422a2b;
+  line-height: 1.6;
+  padding: 0;
+}
+
+/* Header section */
+header {
+  background-color: #fbe9e7;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #b71c1c;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.3rem;
+  color: #6d4c41;
+}
+
+/* Section styling */
+section {
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Box styling for Skills, Certificates, Projects */
+.box {
+  background-color: #fff3e0;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #f9bdbb;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle-label {
+  font-size: 1.5rem;
+  color: #b71c1c;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ffe0b2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease;
+}
+
+.toggle-label:hover {
+  background-color: #ffccbc;
+}
+
+.content {
+  display: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #ef9a9a;
+}
+
+#skills-toggle:checked ~ .content,
+#certificates-toggle:checked ~ .content,
+#projects-toggle:checked ~ .content {
+  display: block;
+}
+
+.content ul {
+  list-style: none;
+}
+
+.content li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #4e342e;
+}
+
+/* Contact section */
+.contact {
+  background-color: #ffe0e6;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact p {
+  margin: 0.5rem 0;
+  color: #6a1b1a;
+}
+
+/* Footer */
+footer {
+  background-color: #fce4ec;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #ad1457;
+  margin-top: 2rem;
+}
